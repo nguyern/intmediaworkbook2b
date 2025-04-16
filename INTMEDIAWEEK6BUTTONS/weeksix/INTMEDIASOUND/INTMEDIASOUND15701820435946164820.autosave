@@ -1,0 +1,63 @@
+var song; // initiating our variable
+var analyzer;
+
+var lyrics = [
+  "there's a pounding in my head",
+  "glitter all over the room",
+  "pictures of last night ended up online",
+  "i'm screwed",
+  "it's a blacked out blur",
+  "we took too many shots",
+  "think we kissed but I forgot",
+  "we maxed our credit cards",
+  "we got kicked out of the bar",
+  "always say we're gonna stop this"
+];
+
+var currentLyric = "";
+var lastUpdate = 0;
+
+function preload() {
+  song = loadSound('data/katyperry.mp3'); 
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight); // create full window canvas
+  background(255);
+  analyzer = new p5.Amplitude();
+  analyzer.setInput(song);
+  fill("deeppink");
+  textSize(72);
+  textAlign(CENTER, CENTER);
+  currentLyric = random(lyrics); // initial lyric
+}
+
+function draw() {
+  background(255, 10); // soft echo trail
+  fill("deeppink");
+
+  var volume = analyzer.getLevel();
+  volume *= 200;
+
+  textSize(volume * 1);
+  translate(width / 2, height / 2);
+  rotate(volume);
+  text(currentLyric, 0, 0);
+
+  // change lyric every 90 frames 
+  if (frameCount - lastUpdate > 90) {
+    currentLyric = random(lyrics);
+    lastUpdate = frameCount;
+  }
+}
+
+function mousePressed() {
+  if (song.isPlaying()) {
+    background(255);
+    song.stop(); // if the song is playing, stop it
+  } else {
+    background(255);
+    song.loop();
+    song.play(); 
+  }
+}
