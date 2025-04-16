@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weekfivediary.html</title>
+    <style> 
+        @import url("https://use.typekit.net/gxi7nst.css");
+
+        *{
+          margin: 0.5;
+          padding: 0.5;
+         }
+ 
+         body {
+          width: 100vw;
+          height: 100vh;
+          font-size: 24px;
+          line-height: 1rem;
+          color:deeppink;
+         }
+ 
+          h1 {
+              font-size: 2rem;
+              line-height: 3rem;
+          }
+          h2{
+              font-size: 1.2rem;
+              line-height: 1.8rem; 
+          }
+
+          a {
+        font-size: 12px;
+        line-height: 1.2rem;
+        font-family: monospace;
+        color:deeppink;
+        }
+ 
+          #monospace {
+          font-size: 12px;
+          line-height: 1.2rem;
+          margin: 1em;
+          margin-right: 2em;
+          font-family: monospace;
+          color:deeppink;
+          }
+ 
+          #sloop:hover {
+          font-size: 18px;
+          line-height: 0.5rem;
+          font-family: "sloop-script-three", sans-serif;
+          color:deeppink;
+          }
+          
+          .tab1 {
+         display: inline-block;
+         margin-left: 4em;
+          }
+          .tab2 {
+         display: inline-block;
+         margin-left: 8em;
+          }
+          .tab3 {
+         display: inline-block;
+         margin-left: 12em;
+          }
+      </style>
+ </head>
+ <body>
+     <div id="monospace">
+         <a href ="../../index.html"> &lt;button&gt; <span id="sloop"> Take me back home! &lt;/button&gt;</span></a>
+         <br>
+         <a href ="../../weekfour/index.html">&lt;button&gt; <span id="sloop"> Do you want to Skip to Week Four? </span> &lt;/button&gt;</a>
+        <br>
+        <a href ="../../INTMEDIAWEEK6BUTTONS/index.html"> &lt;button&gt; <span id="sloop"> Or Week Six </span> &lt;/button&gt;</a>
+        <br><br>
+
+        //may 01, 2025 <br>
+        //why doesn't he like me???<br><br>
+
+        let thoughts = ["fix your posture", "you're typing really loud", "would he like me if i was blonde?", "do i look fat in this dress?"];<br><br>
+    
+
+        function draw() {<br>
+        background("ragingred");<br>
+        let randomThought = random(thoughts);<br>
+        text(randomThought, mouseX, mouseY);<br>
+        }<br><br>
+
+        &lt;reflection&gt;<br>
+        <span class="tab1">&lt;p&gt; In Week Five we began to explore camera and colour in images. For me I have been battling demons questioning why this guy hasn't responded to me. I've attempted to visualise the concept of insecurity and how women are constantly under scrunity for the way they look and present themselves. God forbid a girl lives. This week is a reflection of revealing and reflecting on inner struggles. &lt;/p&gt;</span>
+         <br>
+
+
+         &lt;activities&gt;
+         <br>
+         <span class="tab1"> &lt;h3&gt; mirror who is the fairest of them all &lt;/h3&gt;</span>
+         <br>
+         <span class="tab1">&lt;p&gt; This p5.js experimentation uses face tracking to reveal internal monologue and critique. It reveals certain insecurities through the webcam to create a space of emotional exposure and self-surveillance. I was inspired by the language of beauty standards and intended to almost distort the concept of being percieved by including intrusive thoughts and micro anxieties. The idea that the machine is reflecting these "truths" plays into my whole concept as the girl as the machine and humanising the code. (It's a bit slow but I promise it works) &lt;/p&gt;</span>
+         <br>
+          <span class="tab1"> &lt;image <a href = "./INTMEDIAFACETRACKPINK/index.html" target="_blank" id="sloop">src = "./INTMEDIAFACETRACKPINK/index.html"</a>&gt;</span>
+         <br>
+         <span class="tab2"><a href="./INTMEDIAFACETRACKPINK/index.html" target="_blank">
+            <img src="./images5/facetrack.gif" style="width: 900px; height: 450px; cursor: pointer;">
+          </a></span>
+        <br>
+        <span class="tab1">&lt;/image&gt;</span>
+         <br>
+         <span class="tab1"> &lt;h3&gt; he loves me or he loves me not? &lt;/h3&gt;</span>
+         <br>
+         <span class="tab1">&lt;p&gt; This sketch explores the use of textToPoints in p5.js as we learnt how to convert strings to individual x and y coordinates. This has opened up many possibilities in working with typography as a dynamic form. I've used this feature to communicate my story, relating to the almost obsessive questioning that a girl can go through, to a point where it is unstable. The moving dots reflect the anxious feeling of constant uncertainty and almost echos a spiraling thought. &lt;/p&gt;</span>
+         <br>
+         <span class="tab1"> &lt;image <a href = "./INTMEDAWEEK5FONTS/index.html" target="_blank" id="sloop">src = "./INTMEDAWEEK5FONTS/index.html"</a>&gt;</span>
+         <br>
+         <span class="tab2"><a href="./INTMEDAWEEK5FONTS/index.html" target="_blank">
+            <img src="./images5/doesheloveme.gif" style="width: 900px; height: 450px; cursor: pointer;">
+          </a></span>
+        <br>
+        <span class="tab1">&lt;/image&gt;</span>
+         <br>
+         <span class="tab1"> &lt;h3&gt; GUYS I THINK HE TEXTED ME &lt;/h3&gt;</span>
+         <br>
+         <span class="tab1">&lt;p&gt; In this p5 sketch I've used the copy() function to create a "scratch to reveal" effect to reveal an underlying message. The sketch is simple, at first it is hopeful and excited at the potential of a text. But as you interact, it reveals that it was an illusion and you are met with a 404 error message, because he in fact did not message you. It was probably your mum. &lt;/p&gt;</span>
+         <br>
+         <span class="tab1"> &lt;image <a href = "./INTMEDIAWEEK5COLOURIN/index.html" target="_blank" id="sloop">src = "./INTMEDIAWEEK5COLOURIN/index.html"</a>&gt;</span>
+         <br>
+         <span class="tab2"><a href="./INTMEDIAWEEK5COLOURIN/index.html" target="_blank">
+            <img src="./images5/textme.gif" style="width: 900px; height: 450px; cursor: pointer;">
+          </a></span>
+        <br>
+        <span class="tab1">&lt;/image&gt;</span>
+         <br>
+         <span class="tab1"> &lt;h3&gt; some code snippets! &lt;/h3&gt;</span>
+         <br>
+        <span class="tab1"> &lt;p&gt; working on the landing page for week 5 p5.js &lt;/p&gt;</span>
+         <br>
+         <span class="tab1"> &lt;image&gt;</span>
+         <br>
+         <span class="tab2"><image style= "width:400px; height: 100%; overflow: auto;" src = "./images5/likemeps5.png"></image></span>
+         <br>
+         <span class="tab1"> &lt;/image&gt;</span>
+         <br>
+         <span class="tab1"> &lt;p&gt; learning how to translate texts into points in p5 &lt;/p&gt;</span>
+         <br>
+         <span class="tab1"> &lt;image&gt;</span>
+         <br>
+         <span class="tab2"><image style= "width:400px; height: 100%; overflow: auto;" src = "./images5/doeshelovemeps5.png"></image></span>
+         <br>
+         <span class="tab1"> &lt;/image&gt;</span>
+         <br>
+     </div>
+     
+ </body>
+ </html>
