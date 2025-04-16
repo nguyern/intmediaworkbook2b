@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Two</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+       }
+       body {
+        width: 100vw;
+        height: 100vh;
+        font-size: 12px;
+        line-height: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: blue;
+       }
+       header {
+            background-color: pink;
+            height: 10vh;
+        }
+        h1 {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+        h2{
+            font-size: 1.2rem;
+            line-height: 1.8rem; 
+        }
+        .flex-row {
+            height: 90vh;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-around; */
+        }
+        #menu-col {
+            width: 30%;
+            padding: 0.5rem;
+            background-color: aqua;
+        }
+        #content{
+            /* rem in relation to font size */
+            width: 70%;   
+            padding: 0.5rem; 
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Interactive Media</h1></header>
+    <div class="flex-row">
+        <div id="menu-col">
+            <a href="./week-one/"> 
+                <button>Week 1</button>
+            </a>  
+        </div>
+        <div id="content">
+            <h1>Interactive Media</h1>
+            <p>
+                Interactive media refers to digital experiences that dynamically respond to user input, delivering content such as text, images, animations, video, audio, and even AI-driven interactions. Over the years, interactive media has expanded across gaming, education, social platforms, and immersive technologies like VR and AR. With the rise of AI-generated content, decision-driven narratives, and real-time engagement, concerns have shifted toward cybersecurity risks, digital well-being, and the societal impact of hyper-personalized media.[1]
+            </p>
+            <img src="./img/interactivemedia.JPG">
+        </div>
+    </div>
+</body>
+</html>
