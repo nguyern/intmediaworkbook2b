@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Eight</title>
+    <style> 
+        @import url("https://use.typekit.net/gxi7nst.css");
+
+        *{
+          margin: 0.5;
+          padding: 0.5;
+         }
+ 
+         body {
+          width: 100vw;
+          height: 100vh;
+          font-size: 24px;
+          line-height: 1rem;
+          color:deeppink;
+         }
+ 
+          h1 {
+              font-size: 2rem;
+              line-height: 3rem;
+          }
+          h2{
+              font-size: 1.2rem;
+              line-height: 1.8rem; 
+          }
+
+          a {
+        font-size: 12px;
+        line-height: 1.2rem;
+        font-family: monospace;
+        color:deeppink;
+        }
+ 
+          #monospace {
+          font-size: 12px;
+          line-height: 1.2rem;
+          margin: 1em;
+          font-family: monospace;
+          color:deeppink;
+          }
+ 
+          #sloop:hover {
+          font-size: 18px;
+          line-height: 0.5rem;
+          font-family: "sloop-script-three", sans-serif;
+          color:deeppink;
+          }
+          
+          .tab1 {
+         display: inline-block;
+         margin-left: 4em;
+          }
+          .tab2 {
+         display: inline-block;
+         margin-left: 8em;
+          }
+          .tab3 {
+         display: inline-block;
+         margin-left: 12em;
+          }
+      </style>
+ </head>
+ <body>
+     <div id="monospace">
+        <a href ="../">&lt;button&gt; <span id="sloop"> Take me back home! </span> &lt;/button&gt;</a>
+        <br>
+       <a href ="../weekseven/index.html">&lt;button&gt; <span id="sloop"> Do you want to Skip to Week Seven? </span> &lt;/button&gt;</a>
+       <br>
+       <a href ="../weeknine/index.html"> &lt;button&gt; <span id="sloop"> Or Week Nine </span> &lt;/button&gt;</a>
+       <br><br>
+       &lt;week eight reflection&gt;<br>
+       <span class="tab1">&lt;p&gt; In Week Eight we were totallyy dominating the Arduino. Things are starting to make sense and I actually understand how a circuit works now. It feels super liberating to actually be able to make something happen out of just wires and sensors. How empowering to understand something I thought I would never be able to! What's that saying? If you want to be good at something, first you've got to be bad. Preach. &lt;/p&gt;</span>
+        <br>
+        &lt;activities&gt;
+        <br>
+        <span class="tab1"> &lt;h3&gt; ugh what is that annoying sound???! &lt;/h3&gt;</span>
+        <br>
+        <span class="tab1">&lt;p&gt; In this circuit we used a photoresistor to control a passive buzzer based on how much light the sensor was detecting. Using the photoresistor, the Arduino would constantly read the brightness in the room, and if the value passed a certain threshold, it played a super annoying tone. If it was too dark, the buzzer would stay silent. Like ugh thank god it was sooo loud. This taught me how to use map() to translate sensor values into some sort of output!! 
+
+         &lt;/p&gt;</span>
+        <br>
+         <span class="tab1"> &lt;video&gt;</span>
+        <br>
+        <span class="tab2">
+           <video width="650" controls muted autoplay loop> <source src="./video8/soundsensor.mov" type="video/mp4"> </video>
+        </span>
+       <br>
+       <span class="tab1">&lt;/video&gt;</span>
+        <br>
+
+        <span class="tab1"> &lt;image&gt;</span>
+        <br>
+        <span class="tab2">
+           <img src="./images8/soundsense.png" style="width: 650px; height: 450px; cursor: pointer;">
+        </span>
+       <br>
+       <span class="tab1">&lt;/image&gt;</span>
+        <br>
+
+        <span class="tab1"> &lt;image&gt;</span>
+        <br>
+        <span class="tab2">
+           <img src="./images8/photoresistor.png" style="width: 650px; height: 450px; cursor: pointer;">
+        </span>
+       <br>
+       <span class="tab1">&lt;/image&gt;</span>
+        <br>
+
+        <span class="tab1"> &lt;h3&gt; fishy why are you sleeping &lt;/h3&gt;</span>
+        <br>
+        <span class="tab1">&lt;p&gt; Okay in this circuit we used the photoresistor to control a servo motor. The motor was programmed to move whenever the light dropped below a certain threshold. The photoresistor was wired to the Arduino and we used analogRead()to measure the light levels. When it got dark enough, the servo rotated a certain degree. We experimented with a bunch of different degrees and it was super cool to watch it move. It also looks like a cute little fish which I adore! This was a super great way to learn how to use sensor input to control motion and make objects feel responsive or alive.  &lt;/p&gt;</span>
+        <br>
+         <span class="tab1"> &lt;video&gt;</span>
+        <br>
+        <span class="tab2">
+           <video width="650" controls muted autoplay loop> <source src="./video8/fishsensor.mov" type="video/mp4"> </video>
+        </span>
+       <br>
+       <span class="tab1">&lt;/video&gt;</span>
+        <br>
+
+        <span class="tab1"> &lt;image&gt;</span>
+        <br>
+        <span class="tab2">
+           <img src="./images8/fishy.png" style="width: 650px; height: 450px; cursor: pointer;">
+        </span>
+       <br>
+       <span class="tab1">&lt;/image&gt;</span>
+        <br>
+
+        <span class="tab1"> &lt;image&gt;</span>
+        <br>
+        <span class="tab2">
+           <img src="./images8/fishcode.jpeg" style="width: 650px; height: 375px; cursor: pointer;">
+        </span>
+       <br>
+       <span class="tab1">&lt;/image&gt;</span>
+        <br>
+
+        <span class="tab1"> &lt;h3&gt; mary had a little lamb &lt;/h3&gt;</span>
+        <br>
+        <span class="tab1">&lt;p&gt; Okay this circuit was sooo cool. We used wires to act as capacitive sensors and detect when a person touched them. Each wire was assigned a different frequency which played through the buzzer when you touched the wire. The CapacitiveSensor library helped us measure the changes in electrical charge when human skin came near the sensors. Because me and meg are so musically talented we decided to perform "mary had a little lamb". This activity was super interesting and showed us how simple interactions, such as touch, can create an cool output. Being able to create an electrical piano is totally easier then I thought it would be. &lt;/p&gt;</span>
+        <br>
+         <span class="tab1"> &lt;video&gt;</span>
+        <br>
+        <span class="tab2">
+           <video width="650" controls muted autoplay loop> <source src="./video8/maryhadalittle.mov" type="video/mp4"> </video>
+        </span>
+       <br>
+       <span class="tab1">&lt;/video&gt;</span>
+        <br>
+
+        <span class="tab1"> &lt;h3&gt; cdefg piano &lt;/h3&gt;</span>
+        <br>
+        <span class="tab1">&lt;p&gt; Because me and meg were super ambitious and smart we decided to include other additional notes to our electric piano. We added more wires and resistors and adjusted the Arduino code to include the notes F and G. We searched up the frequencies for F and G and then created new if statements to assign these wires to these frequencies. &lt;/p&gt;</span>
+        <br>
+        <span class="tab1"> &lt;video&gt;</span>
+        <br>
+        <span class="tab2">
+           <video width="650" controls muted autoplay loop> <source src="./video8/pianocdefg.mov" type="video/mp4"> </video>
+        </span>
+       <br>
+       <span class="tab1">&lt;/video&gt;</span>
+        <br>
+
+        <span class="tab1"> &lt;image&gt;</span>
+        <br>
+        <span class="tab2">
+           <img src="./images8/piano.png" style="width: 650px; height: 450px; cursor: pointer;">
+        </span>
+       <br>
+       <span class="tab1">&lt;/image&gt;</span>
+        <br>
+
+        <span class="tab1"> &lt;image&gt;</span>
+        <br>
+        <span class="tab2">
+           <img src="./images8/pianocode.jpeg" style="width: 650px; height: 375px; cursor: pointer;">
+        </span>
+       <br>
+       <span class="tab1">&lt;/image&gt;</span>
+        <br>
+
+        <span class="tab1"> &lt;image&gt;</span>
+        <br>
+        <span class="tab2">
+           <img src="./images8/pianocode2.jpeg" style="width: 650px; height: 350px; cursor: pointer;">
+        </span>
+       <br>
+       <span class="tab1">&lt;/image&gt;</span>
+        <br>
+
+        &lt;research&gt;
+        <br>
+        <span class="tab1"> &lt;h3&gt; Live Pelt by Kelly Heaton &lt;/h3&gt;</span>
+        <br>
+        <span class="tab1">&lt;p&gt; In Live Pelt, Kelly Heaton created an analog circuit covered in faux fur that responds to stroking by emitting purring sounds. This was her attempt to mimick a living, emotional creature. Her work explores animal behaviour and emotional feedback. Through this project, it made me wonder the possibilities of what an "output" could be. It goes beyond just light or sound, but attempts to replicate warmth and comfort. I find it so interesting to see how often people will turn physical computations into real, human things and feelings. The idea of converting a circuit into a creature that responds to touch is super intriguing. It helps consolidate the concepts of connecting sensors into certain responses and outputs. The concept of converting human senses into human responses through a physical computation is a super insightful inspiration for further ideas and final projects. &lt;/p&gt;</span>
+        <br>
+        <span class="tab1"> &lt;image <a href = "https://www.kellyheatonstudio.com/live-pelt" target="_blank" id="sloop">src = "https://www.kellyheatonstudio.com/live-pelt"</a>&gt;</span>
+         <br>
+         <span class="tab2"> <image style="width: 450px; height: 650px; overflow: auto;" src="./images8/livepelt.jpg"></iframe></span>
+        <br>
+        <span class="tab1">&lt;/image&gt;</span>
+        <br>
+
+        <span class="tab1"> &lt;h3&gt; Hacking the Body by Kate Sicchio and Camille Baker &lt;/h3&gt;</span>
+        <br>
+        <span class="tab1">&lt;p&gt; Hacking the Body is a collaborative project by Kate Sicchio and Camille Baker that explores how biosignals, like breath, heartbeat, and muscle tension, can be turned into creative outputs using wearable sensors. They use tools like the Arduino, wearable circuits, and custom software to create systems that map the internal states of the performer’s body to external outputs. These outputs included generative visuals, reactive music, or choreographed motion, all determined by the performer’s physiological responses. Their work blends performance, physical computing, and feminist technology. They treat the body as a responsive system rather than something to be measured or corrected. Their project was really intriguing to me in the way they transformed data collection into a form of expression. Being able to compute a body's physiological response and change that into an interactive and immersive experience was really interesting. It highlights how we can communicate bodily figures into a computation and vice cersa. &lt;/p&gt;</span>
+        <br>
+        <span class="tab1"> &lt;image <a href = "https://www.sicchio.com/work-1/hacking-the-body" target="_blank" id="sloop">src = "https://www.sicchio.com/work-1/hacking-the-body"</a>&gt;</span>
+         <br>
+         <span class="tab2"> <image style="width: 650px; height: 450px; overflow: auto;" src="./images8/hackbody.JPG"></iframe></span>
+        <br>
+        <span class="tab1">&lt;/image&gt;</span>
+        <br>
+
+         &lt;/body&gt;
+         <br>
+         &lt;/html&gt;
+     </div>
+     
+ </body>
+ </html>
