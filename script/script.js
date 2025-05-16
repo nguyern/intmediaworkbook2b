@@ -30,6 +30,9 @@ var data = [
       <a href="./weekfour/"><span class="tab1">&lt;button&gt; <span id="sloop">Week Four</span> &lt;/button&gt;</span></a><br/>
       <a href="./INTMEDIASOCIALPOST/"><span class="tab1">&lt;button&gt; <span id="sloop">Week Five</span> &lt;/button&gt;</span></a><br/>
       <a href="./INTMEDIAWEEK6BUTTONS/index.html"><span class="tab1">&lt;button&gt; <span id="sloop">Week Six</span> &lt;/button&gt;</span></a><br/>
+      <a href="./weekseven/"><span class="tab1">&lt;button&gt; <span id="sloop">Week Seven</span> &lt;/button&gt;</span></a><br/>
+      <a href="./weekeight/"><span class="tab1">&lt;button&gt; <span id="sloop">Week Eight</span> &lt;/button&gt;</span></a><br/>
+      <a href="./weeknine/"><span class="tab1">&lt;button&gt; <span id="sloop">Week Nine</span> &lt;/button&gt;</span></a><br/>
       &lt;/body&gt;<br/>
       &lt;/html&gt;<br/>
     `,
